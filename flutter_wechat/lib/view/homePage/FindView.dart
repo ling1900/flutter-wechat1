@@ -1,35 +1,26 @@
 import 'package:flutter/material.dart';
-import 'Mine/MInfoVC.dart';
-import 'Mine/MWalletVC.dart';
-class MineView extends StatefulWidget{
+
+// 标签页内容：发现
+class FindView extends StatefulWidget{
   @override
-  _MineViewState createState() => new _MineViewState();
+  _FindViewState createState() => new _FindViewState();
 }
-class _MineViewState extends State{
+
+
+class _FindViewState extends State{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Scaffold(
       body: new ListView(
         children: <Widget>[
+
           new Container(
             padding:const EdgeInsets.only(top: 20.0),
             child: new Container(
-              height: 80.0,
+              height: 50.0,
               child: new ListTile(
-                leading: new Image.asset("images/xk.jpg"),
-                title: new Text("Tony"),
-                subtitle: new Text("微信号：ty001"),
-                trailing: new Icon(Icons.fullscreen),
-                onTap: (){
-                  Navigator.of(context).push(
-                      new MaterialPageRoute(
-                          builder: (context){
-                            return new MInfoVC();
-                          }
-                      )
-                  );
-                },
+                leading: new Icon(Icons.camera),
+                title: new Text("朋友圈"),
               ),
               color: Colors.white,
             ),
@@ -38,18 +29,41 @@ class _MineViewState extends State{
           new Container(
             padding:const EdgeInsets.only(top: 20.0),
             child: new Container(
+              height: 50.0,
               child: new ListTile(
-                leading: new Icon(Icons.call_to_action),
-                title: new Text("钱包"),
-                onTap: (){
-                  Navigator.of(context).push(
-                      new MaterialPageRoute(
-                          builder: (context){
-                            return new MWalletVC();
-                          }
-                      )
-                  );
-                },
+                leading: new Icon(Icons.crop_free),
+                title: new Text("扫一扫"),
+              ),
+              color: Colors.white,
+            ),
+            color: Colors.grey[200],
+          ),
+          new Container(
+            padding:const EdgeInsets.only(top: 20.0),
+            child: new Container(
+              height: 50.0,
+              child: new ListTile(
+                leading: new Icon(Icons.star),
+                title: new Text("看一看"),
+              ),
+              color: Colors.white,
+            ),
+            color: Colors.grey[200],
+          ),
+          new Container(
+            child: new ListTile(
+              leading: new Icon(Icons.search),
+              title: new Text("搜一搜"),
+            ),
+            color: Colors.white,
+            height: 50.0,
+          ),
+          new Container(
+            padding:const EdgeInsets.only(top: 20.0),
+            child: new Container(
+              child: new ListTile(
+                leading: new Icon(Icons.people),
+                title: new Text("附近的人"),
               ),
               color: Colors.white,
               height: 50.0,
@@ -57,11 +71,19 @@ class _MineViewState extends State{
             color: Colors.grey[200],
           ),
           new Container(
+            child: new ListTile(
+              leading: new Icon(Icons.hourglass_empty),
+              title: new Text("漂流瓶"),
+            ),
+            color: Colors.white,
+            height: 50.0,
+          ),
+          new Container(
             padding:const EdgeInsets.only(top: 20.0),
             child: new Container(
               child: new ListTile(
-                leading: new Icon(Icons.dashboard),
-                title: new Text("收藏"),
+                leading: new Icon(Icons.shopping_cart),
+                title: new Text("购物"),
               ),
               color: Colors.white,
               height: 50.0,
@@ -70,24 +92,8 @@ class _MineViewState extends State{
           ),
           new Container(
             child: new ListTile(
-              leading: new Icon(Icons.photo),
-              title: new Text("相册"),
-            ),
-            color: Colors.white,
-            height: 50.0,
-          ),
-          new Container(
-            child: new ListTile(
-              leading: new Icon(Icons.credit_card),
-              title: new Text("卡包"),
-            ),
-            color: Colors.white,
-            height: 50.0,
-          ),
-          new Container(
-            child: new ListTile(
-              leading: new Icon(Icons.tag_faces),
-              title: new Text("表情"),
+              leading: new Icon(Icons.games),
+              title: new Text("游戏"),
             ),
             color: Colors.white,
             height: 50.0,
@@ -96,8 +102,8 @@ class _MineViewState extends State{
             padding:const EdgeInsets.only(top: 20.0),
             child: new Container(
               child: new ListTile(
-                leading: new Icon(Icons.settings),
-                title: new Text("设置"),
+                leading: new Icon(Icons.apps),
+                title: new Text("小程序"),
               ),
               color: Colors.white,
               height: 50.0,

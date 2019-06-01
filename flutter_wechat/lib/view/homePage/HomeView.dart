@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
-import 'XKTabBar.dart';
+import '../comp/XKTabBar.dart';
+
+// 标签页内容：首页（聊天记录列表）
 class HomeView extends StatefulWidget{
   @override
   _HomeViewState createState() => new _HomeViewState();
 }
+
+
 class _HomeViewState extends State{
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Scaffold(
       body: _buildListView(),
     );
   }
+
   ListView _buildListView(){
     return new ListView(
       children: <Widget>[

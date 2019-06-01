@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MInfoVC extends StatefulWidget{
+// 页面：我的信息
+class MyInfoPage extends StatefulWidget{
   @override
-  _MInfoVCState createState() => new _MInfoVCState();
+  _MyInfoPageState createState() => new _MyInfoPageState();
 }
-class _MInfoVCState extends State<MInfoVC>{
+
+
+class _MyInfoPageState extends State<MyInfoPage>{
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

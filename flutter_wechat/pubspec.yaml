@@ -1,4 +1,5 @@
-name: flutter_wechat
+# https://github.com/JadenZhong/wechat-flutter
+name: flutter_wechat1
 description: A new Flutter application.
 
 dependencies:

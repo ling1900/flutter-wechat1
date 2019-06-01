@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MWalletVC extends StatefulWidget{
+// 页面：我的钱包
+class MyWalletPage extends StatefulWidget{
   @override
-  _MWalletVCState createState() => new _MWalletVCState();
+  _MyWalletPageState createState() => new _MyWalletPageState();
 }
-class _MWalletVCState extends State<MWalletVC>{
+
+
+class _MyWalletPageState extends State<MyWalletPage>{
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
